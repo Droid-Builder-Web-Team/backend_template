@@ -76,7 +76,10 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            <div class="container-fluid">
+                @yield('content')
+                {!! NoCaptcha::renderJs() !!}
+            </div>
         </main>
     </div>
 </body>
