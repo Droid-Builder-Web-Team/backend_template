@@ -1,0 +1,14 @@
+name: backend-template
+recipe: laravel
+config:
+  webroot: public
+services:
+  myservice:
+    type: phpmyadmin
+    config:
+      config: config/config.user.inc.php
+  database:
+    creds:
+      database: backend-template
+      username: laravel
+      password: laravel
